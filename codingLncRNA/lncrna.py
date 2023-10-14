@@ -16,12 +16,12 @@ class LncRNAData:
         return self._get_sequences('ORF_seq', label)
     
     def _get_sequences(self, sequence_column, label):
-        sequences = self.data.loc[self.data[sequence_column] != "/", sequence_column].copy()
+        sequences = self.data.loc[~self.data[sequence_column].isin(["/", "0", np.nan]), sequence_column].copy()
         result_df = pd.DataFrame({
             'sequence': sequences,
             'label': label
         })
-        print(f"Removed rows with '/', returning {len(result_df)} sequences.")
+        print(f"Removed un-annotated rows with '/' or '0', returning {len(result_df)} sequences.")
         return result_df
 
 def load_data():
