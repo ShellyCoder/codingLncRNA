@@ -23,3 +23,6 @@ class LncRNAData:
         })
         print(f"Removed rows with '/', returning {len(result_df)} sequences.")
         return result_df
+
+def load_data():
+    return LncRNAData().data    
