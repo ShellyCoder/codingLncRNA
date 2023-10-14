@@ -22,7 +22,7 @@ class LncRNAData:
             'sequence': sequences,
             'label': label
         })
-        print(f"Removed un-annotated rows with '/' or '0', returning {len(result_df)} sequences.")
+        print(f"Removed un-annotated {sequence_column} with '/' or '0', returning {len(result_df)} sequences.")
         return result_df
 
 def load_data():
