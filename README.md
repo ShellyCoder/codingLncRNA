@@ -1,7 +1,7 @@
 
-# codingLncRNA: A Comprehensive Package for LncRNA Data Management
+# codingLncRNA: A Comprehensive Package for coding-peptide LncRNA Data Management
 
-`codingLncRNA` is a utility package available both in R and Python, designed to facilitate easy management and retrieval of long non-coding RNA (lncRNA) data which code peptides, including RNA sequences, peptide sequences, and ORF sequences.
+`codingLncRNA` is a utility package available both in R and Python, designed to facilitate easy management and retrieval of lncRNAs which code peptides, including RNA sequences, peptide sequences, and ORF sequences.
 
 - [R Package Usage](#r-package-usage)
 - [Python Package Usage](#python-package-usage)
@@ -19,7 +19,7 @@ install.packages("devtools")
 Then, install `codingLncRNA` from GitHub with:
 
 ```r
-devtools::install_github("ShellyCoder/codingLncRNA/R/codingLncRNA", force = TRUE)
+devtools::install_github("ShellyCoder/codingLncRNA/R/codingLncRNA")
 ```
 
 ### Usage
