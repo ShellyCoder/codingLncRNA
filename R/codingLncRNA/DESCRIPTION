@@ -1,0 +1,14 @@
+Package: codingLncRNA
+Type: Package
+Title: The resource of coding-peptide LncRNA
+Version: 1.0.0
+Author: TIANYUAN LIU
+Description: Get the sequence of RNA, peptide and ORF (open reading frame) of coding-peptide LncRNA
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
+License: GPL-3
+Maintainer: TIANYUAN LIU <biocoder1024@hotmail.com>
+Imports: 
+    data.table,
+    methods
