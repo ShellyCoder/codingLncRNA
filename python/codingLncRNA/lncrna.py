@@ -17,10 +17,13 @@ class LncRNAData:
         return self._get_sequences('ORF_seq', label)
     
     def _get_sequences(self, sequence_column, label):
-        sequences = self.data.loc[~self.data[sequence_column].isin(["/", "0", np.nan]), sequence_column].copy()
+        filtered_data = self.data.loc[~self.data[sequence_column].isin(["/", "0", np.nan])]
+        sequences = filtered_data[sequence_column].copy()
+        organisms = filtered_data['Organism'].copy()
         result_df = pd.DataFrame({
             'sequence': sequences,
-            'label': label
+            'label': label,
+            'organism': organisms
         })
         print(f"Removed un-annotated {sequence_column} with '/' or '0', returning {len(result_df)} sequences.")
         return result_df
