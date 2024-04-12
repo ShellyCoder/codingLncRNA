@@ -1,6 +1,10 @@
 
 # codLncScape provides a self-enriching framework for systematic collection and exploration of coding lncRNAs
 
+We are delighted to announce that our paper has been published in ***Advanced Science***. We encourage researchers to utilize and cite our work to further the study of coding lncRNAs. For reference, please use the following link: [https://doi.org/10.1002/advs.202400009](https://doi.org/10.1002/advs.202400009).
+
+This research was collaboratively conducted by Tianyuan Liu, Huiyuan Qiao, Zixu Wang et al. 
+
 `codingLncRNA` is a utility package available both in R and Python, designed to facilitate easy management and retrieval of lncRNAs which code peptides, including RNA sequences, peptide sequences, and ORF sequences. In addition, this `Scripts` directory is an integral part of the codLncScape dedicated to the bioinformatics analysis of coding lncRNAs. 
 
 - [R Package Usage](#r-package-usage)
